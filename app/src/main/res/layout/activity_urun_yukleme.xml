@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="20dp"
+    tools:context=".UrunYuklemeActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yeni Ürün"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/secilmisResim"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_image_background"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <Button
+        android:id="@+id/resimSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#2C2C2C"
+        android:text="Resim Seç"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/secilmisResim"
+        app:layout_constraintStart_toEndOf="@id/secilmisResim"
+        app:layout_constraintTop_toTopOf="@id/secilmisResim" />
+
+    <EditText
+        android:id="@+id/yukleUrunIsim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Ürün adı"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/secilmisResim" />
+
+    <EditText
+        android:id="@+id/yukleUrunFiyat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Fiyat"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/yukleUrunStok"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yukleUrunIsim" />
+
+    <EditText
+        android:id="@+id/yukleUrunStok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Stok"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yukleUrunFiyat"
+        app:layout_constraintTop_toTopOf="@id/yukleUrunFiyat" />
+
+    <EditText
+        android:id="@+id/yukleUrunAciklama"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background_light"
+        android:gravity="top"
+        android:hint="Ürün açıklaması"
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/yukleUrunFiyat" />
+
+    <Button
+        android:id="@+id/urunYukleButon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#4CAF50"
+        android:padding="16dp"
+        android:text="Ürünü Kaydet"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/yukleUrunAciklama" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "254332815010",
+    "project_id": "nestrevive-2fd95",
+    "storage_bucket": "nestrevive-2fd95.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254332815010:android:a3fba9577836d3ceb1f9fb",
+        "android_client_info": {
+          "package_name": "com.atakancetli.nestrevive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF5lA4Gz63rApNja2enJ8RF6sPu_xwtGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
